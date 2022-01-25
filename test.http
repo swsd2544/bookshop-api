@@ -1,0 +1,40 @@
+GET http://localhost:8000/users
+###
+
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "firstName": "Siriwudhi",
+    "lastName": "Sawaidee",
+    "phone": "0882603612"
+}
+###
+
+GET http://localhost:8000/users/1
+###
+
+GET http://localhost:8000/books
+###
+
+POST http://localhost:8000/books
+Content-Type: application/json
+
+{
+    "title": "Aladdin-2",
+    "pricePerday": 5.50
+}
+###
+
+GET http://localhost:8000/books/1
+###
+
+GET http://localhost:8000/borrow?userId=7
+###
+
+POST http://localhost:8000/borrow?userId=7&bookId=2
+Content-Type: application/json
+
+{
+    "numberOfDays": 3
+}
